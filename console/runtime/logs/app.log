@@ -1,0 +1,391 @@
+2019-12-22 10:41:27 [-][-][-][error][yii\db\Exception] PDOException: could not find driver in /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php:698
+Stack trace:
+#0 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(698): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(624): yii\db\Connection->createPdoInstance()
+#2 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(1015): yii\db\Connection->open()
+#3 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(1002): yii\db\Connection->getMasterPdo()
+#4 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#6 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#8 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Schema.php(754): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Schema.php(193): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(874): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(167): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Controller.php(164): yii\base\Controller->runAction('', Array)
+#18 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#19 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: could not find driver in /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php:635
+Stack trace:
+#0 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(1015): yii\db\Connection->open()
+#1 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(1002): yii\db\Connection->getMasterPdo()
+#2 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#4 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#6 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Schema.php(754): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Schema.php(193): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(874): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(167): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Controller.php(164): yii\base\Controller->runAction('', Array)
+#16 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#17 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2019-12-22 10:41:27 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/RedmiBook:@/tmp/.ICE-unix/1290,unix/RedmiBook:/tmp/.ICE-unix/1290'
+    'SNAP_REVISION' => '136'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu:/etc/xdg'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'GTK_IM_MODULE' => 'ibus'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'SNAP_USER_COMMON' => '/home/feelgood/snap/phpstorm/common'
+    'QT4_IM_MODULE' => 'ibus'
+    'GNOME_SHELL_SESSION_MODE' => 'ubuntu'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SNAP_INSTANCE_KEY' => ''
+    'XMODIFIERS' => '@im=ibus'
+    'DESKTOP_SESSION' => 'ubuntu'
+    'SSH_AGENT_PID' => '1189'
+    'BAMF_DESKTOP_FILE_HINT' => '/var/lib/snapd/desktop/applications/phpstorm_phpstorm.desktop'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git'
+    'LOGNAME' => 'feelgood'
+    'XDG_SESSION_DESKTOP' => 'ubuntu'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'SNAP_CONTEXT' => '78NCd8M7kTFVpdQj3ssXMrVHTf6dtdLt0FV2PqF82dS1'
+    'GJS_DEBUG_TOPICS' => 'JS ERROR;JS LOG'
+    'WINDOWPATH' => '2'
+    'HOME' => '/home/feelgood'
+    'USERNAME' => 'feelgood'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'ru_RU.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'ubuntu:GNOME'
+    'SNAP_ARCH' => 'amd64'
+    'SNAP_INSTANCE_NAME' => 'phpstorm'
+    'SNAP_USER_DATA' => '/home/feelgood/snap/phpstorm/136'
+    'INVOCATION_ID' => '35ad6d72d6a3432a8ec96062d336c645'
+    'MANAGERPID' => '1077'
+    'SNAP_REEXEC' => ''
+    'CLUTTER_IM_MODULE' => 'ibus'
+    'GJS_DEBUG_OUTPUT' => 'stderr'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'feelgood'
+    'SNAP' => '/snap/phpstorm/136'
+    'SNAP_COMMON' => '/var/snap/phpstorm/common'
+    'SNAP_VERSION' => '2019.3.1'
+    'DISPLAY' => ':0'
+    'SHLVL' => '1'
+    'SNAP_LIBRARY_PATH' => '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void'
+    'SNAP_COOKIE' => '78NCd8M7kTFVpdQj3ssXMrVHTf6dtdLt0FV2PqF82dS1'
+    'QT_IM_MODULE' => 'ibus'
+    'SNAP_DATA' => '/var/snap/phpstorm/136'
+    'XDG_RUNTIME_DIR' => '/run/user/1000/snap.phpstorm'
+    'SNAP_NAME' => 'phpstorm'
+    'JOURNAL_STREAM' => '9:33172'
+    'XDG_DATA_DIRS' => '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'ubuntu'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'GIO_LAUNCHED_DESKTOP_FILE_PID' => '8340'
+    'GIO_LAUNCHED_DESKTOP_FILE' => '/var/lib/snapd/desktop/applications/phpstorm_phpstorm.desktop'
+    'OLDPWD' => '/snap/phpstorm/136/bin'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1577011287.8759
+    'REQUEST_TIME' => 1577011287
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-12-22 10:44:47 [-][-][-][error][yii\db\Exception] PDOException: could not find driver in /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php:698
+Stack trace:
+#0 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(698): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(624): yii\db\Connection->createPdoInstance()
+#2 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(1015): yii\db\Connection->open()
+#3 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(1002): yii\db\Connection->getMasterPdo()
+#4 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#6 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#8 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Schema.php(754): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Schema.php(193): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(874): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(167): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Controller.php(164): yii\base\Controller->runAction('', Array)
+#18 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#19 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: could not find driver in /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php:635
+Stack trace:
+#0 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(1015): yii\db\Connection->open()
+#1 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(1002): yii\db\Connection->getMasterPdo()
+#2 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#4 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#6 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Schema.php(754): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Schema.php(193): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(874): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(167): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Controller.php(164): yii\base\Controller->runAction('', Array)
+#16 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#17 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2019-12-22 10:44:47 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/RedmiBook:@/tmp/.ICE-unix/1290,unix/RedmiBook:/tmp/.ICE-unix/1290'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu:/etc/xdg'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'GTK_IM_MODULE' => 'ibus'
+    'QT4_IM_MODULE' => 'ibus'
+    'GNOME_SHELL_SESSION_MODE' => 'ubuntu'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'XMODIFIERS' => '@im=ibus'
+    'DESKTOP_SESSION' => 'ubuntu'
+    'SSH_AGENT_PID' => '1189'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'DBUS_STARTER_BUS_TYPE' => 'session'
+    'PWD' => '/home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git'
+    'LOGNAME' => 'feelgood'
+    'XDG_SESSION_DESKTOP' => 'ubuntu'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'WINDOWPATH' => '2'
+    'HOME' => '/home/feelgood'
+    'USERNAME' => 'feelgood'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'ru_RU.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'ubuntu:GNOME'
+    'VTE_VERSION' => '5802'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/f4e8fdf5_bddf_4525_8bbb_28bdbfcd357d'
+    'INVOCATION_ID' => 'e8ddefebecbd4451857a53df28adc918'
+    'MANAGERPID' => '1077'
+    'CLUTTER_IM_MODULE' => 'ibus'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'feelgood'
+    'GNOME_TERMINAL_SERVICE' => ':1.280'
+    'DISPLAY' => ':0'
+    'SHLVL' => '1'
+    'QT_IM_MODULE' => 'ibus'
+    'DBUS_STARTER_ADDRESS' => 'unix:path=/run/user/1000/bus,guid=273ab40cebd9e2bcadb413bd5dff1d6d'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'JOURNAL_STREAM' => '9:33990'
+    'XDG_DATA_DIRS' => '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'ubuntu'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus,guid=273ab40cebd9e2bcadb413bd5dff1d6d'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1577011487.582
+    'REQUEST_TIME' => 1577011487
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2019-12-22 10:49:32 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php:698
+Stack trace:
+#0 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(698): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(624): yii\db\Connection->createPdoInstance()
+#2 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(1015): yii\db\Connection->open()
+#3 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(1002): yii\db\Connection->getMasterPdo()
+#4 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#6 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#8 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Schema.php(754): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Schema.php(193): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(874): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(167): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Controller.php(164): yii\base\Controller->runAction('', Array)
+#18 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#19 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php:635
+Stack trace:
+#0 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(1015): yii\db\Connection->open()
+#1 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Connection.php(1002): yii\db\Connection->getMasterPdo()
+#2 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#4 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#6 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Schema.php(754): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/db/Schema.php(193): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(874): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(167): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Controller.php(164): yii\base\Controller->runAction('', Array)
+#16 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#17 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git/yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2019-12-22 10:49:32 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/RedmiBook:@/tmp/.ICE-unix/1290,unix/RedmiBook:/tmp/.ICE-unix/1290'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu:/etc/xdg'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'GTK_IM_MODULE' => 'ibus'
+    'QT4_IM_MODULE' => 'ibus'
+    'GNOME_SHELL_SESSION_MODE' => 'ubuntu'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'XMODIFIERS' => '@im=ibus'
+    'DESKTOP_SESSION' => 'ubuntu'
+    'SSH_AGENT_PID' => '1189'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'DBUS_STARTER_BUS_TYPE' => 'session'
+    'PWD' => '/home/feelgood/Рабочий стол/ProgectPHPStorm/Yii2-Part2/yii2-part-2.git'
+    'LOGNAME' => 'feelgood'
+    'XDG_SESSION_DESKTOP' => 'ubuntu'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'WINDOWPATH' => '2'
+    'HOME' => '/home/feelgood'
+    'USERNAME' => 'feelgood'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'ru_RU.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'ubuntu:GNOME'
+    'VTE_VERSION' => '5802'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/f4e8fdf5_bddf_4525_8bbb_28bdbfcd357d'
+    'INVOCATION_ID' => 'e8ddefebecbd4451857a53df28adc918'
+    'MANAGERPID' => '1077'
+    'CLUTTER_IM_MODULE' => 'ibus'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'feelgood'
+    'GNOME_TERMINAL_SERVICE' => ':1.280'
+    'DISPLAY' => ':0'
+    'SHLVL' => '1'
+    'QT_IM_MODULE' => 'ibus'
+    'DBUS_STARTER_ADDRESS' => 'unix:path=/run/user/1000/bus,guid=273ab40cebd9e2bcadb413bd5dff1d6d'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'JOURNAL_STREAM' => '9:33990'
+    'XDG_DATA_DIRS' => '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'ubuntu'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus,guid=273ab40cebd9e2bcadb413bd5dff1d6d'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1577011772.4448
+    'REQUEST_TIME' => 1577011772
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]

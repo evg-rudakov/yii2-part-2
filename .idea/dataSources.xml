@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="yii2_db@localhost" uuid="dee9ac5b-8509-4f2d-a833-7b4d3751e8f9">
+    <data-source source="LOCAL" name="yii2_db@127.0.0.1" uuid="dee9ac5b-8509-4f2d-a833-7b4d3751e8f9">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/yii2_db</jdbc-url>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/yii2_db</jdbc-url>
     </data-source>
   </component>
 </project>
