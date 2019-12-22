@@ -10,6 +10,6 @@ class TaskController extends Controller
 {
     public function actionIndex()
     {
-        return $this->$this->render('index');
+        return $this->render('index');
     }
 }
