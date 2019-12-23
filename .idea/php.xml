@@ -81,6 +81,11 @@
       <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
       <path value="$PROJECT_DIR$/vendor/codeception/module-asserts" />
       <path value="$PROJECT_DIR$/vendor/codeception/module-filesystem" />
+      <path value="$PROJECT_DIR$/vendor/almasaeed2010/adminlte" />
+      <path value="$PROJECT_DIR$/vendor/cebe/yii2-gravatar" />
+      <path value="$PROJECT_DIR$/vendor/fortawesome/font-awesome" />
+      <path value="$PROJECT_DIR$/vendor/rmrevin/yii2-fontawesome" />
+      <path value="$PROJECT_DIR$/vendor/dmstr/yii2-adminlte-asset" />
     </include_path>
   </component>
   <component name="PhpUnit">
